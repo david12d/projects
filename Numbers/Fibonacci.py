@@ -6,22 +6,24 @@ import sys
 
 print("This program is a Fibonacci Sequence Generator.\n")
 
- while True:
+while True:
     try:
-        x = (int) input("Enter a number")
+        x = int(input("Enter a number: \n"))
+        if x < 0:
+            continue
     except ValueError:
         print("Sorry, enter a whole number please")
         continue
     else: 
         break
 
-i = 0  
+
 n = 1
 m = 1
-for a to x:
-    print(n)
+result = 1
+print("1, ")
+for a in range(0, x):
+    print(result,end = ", ")
     n = m
-    m += n
-    i += 1
-    if i == 50:
-        print("")
+    m = result
+    result = n + m
